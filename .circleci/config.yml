@@ -8,6 +8,5 @@ workflows:
     example-workflow:
       jobs:
         - maven/test:
-            command: '-X verify' 
+            command: 'mvn test' 
             context: SurePayAssignment
-            publishSonarResults: false 
