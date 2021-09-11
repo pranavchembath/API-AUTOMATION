@@ -2,7 +2,7 @@
 version: 2.1
 # Use a package of configuration called an orb.
 orbs:
-  mvn: scx/mvn@3.0.1
+  mvn: circleci/maven@0.0.12
 # Orchestrate or schedule a set of jobs
 workflows:
     example-workflow:
