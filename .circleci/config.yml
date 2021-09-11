@@ -8,5 +8,6 @@ workflows:
     example-workflow:
       jobs:
         - mvn/build:
+            context: SurePayAssignment
             command: mvn install 
             publishSonarResults: false 
