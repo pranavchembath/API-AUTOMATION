@@ -8,4 +8,4 @@ workflows:
     example-workflow:
       jobs:
         - maven/test:
-            command: 'mvn test' 
+            command: 'mvn clean test' 
