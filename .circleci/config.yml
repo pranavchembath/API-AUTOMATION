@@ -9,4 +9,3 @@ workflows:
       jobs:
         - maven/test:
             command: 'mvn test' 
-            working_directory: 'SurePayAssignment'
