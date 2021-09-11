@@ -18,7 +18,7 @@ Scenario Outline: Create a Post by UserId
 	Examples:
 	|title |body |userid|
 	|foo3  |bar3 |1|
-	|f004  |bar4 |2|
+	|f004  |bar4 |1|
 
 @ValidateEmail	
 Scenario: Validate Email Address Format on Comments posted by UserId 
