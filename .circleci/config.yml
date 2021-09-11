@@ -9,4 +9,3 @@ workflows:
       jobs:
         - maven/test:
             command: 'mvn test' 
-            context: SurePayAssignment
