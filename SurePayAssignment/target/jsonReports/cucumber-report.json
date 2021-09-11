@@ -1,0 +1,443 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-11T15:14:05.416Z",
+        "line": 4,
+        "name": "Get all existing users and print them in console",
+        "description": "",
+        "id": "get-all-existing-user-from-server;get-all-existing-users-and-print-them-in-console",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1541114900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "todos resource",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.todos_resource()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1769986300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"GetTodosAPI\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetTodosAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4996500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1230290400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Print all unique existing users in console",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.print_all_unique_existing_users_in_console()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetExistingUser"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-11T15:14:10.128Z",
+        "line": 20,
+        "name": "Create a Post by UserId",
+        "description": "",
+        "id": "get-all-existing-user-from-server;create-a-post-by-userid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 913474300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "posts payload with \"foo3\" \"1\" \"bar3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"foo3\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"bar3\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.posts_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 244859000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user calls \"CreatePostAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CreatePostAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the API call is success with status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27986700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Validate key \"userId\" with value as 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userId\"",
+                  "offset": 13
+                },
+                {
+                  "val": "1",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.validate_key_with_value_as(java.lang.String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28984200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Validate key \"id\" with value as 101",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 13
+                },
+                {
+                  "val": "101",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.validate_key_with_value_as(java.lang.String,int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreatePost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-11T15:14:11.373Z",
+        "line": 21,
+        "name": "Create a Post by UserId",
+        "description": "",
+        "id": "get-all-existing-user-from-server;create-a-post-by-userid;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11992600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "posts payload with \"f004\" \"2\" \"bar4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"f004\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"bar4\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.posts_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178897700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user calls \"CreatePostAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CreatePostAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the API call is success with status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c2\u003e but was:\u003c1\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:555)\r\n\tat org.junit.Assert.assertEquals(Assert.java:542)\r\n\tat stepDefinitions.StepDefinition.validate_key_with_value_as(StepDefinition.java:130)\r\n\tat ✽.Validate key \"userId\" with value as 1(file:///C:/Users/MyLap/eclipse-workspace/SurePay-Assignment/SurePayAssignment/src/test/java/features/fetchPostsByUserID.feature:15)\r\n",
+              "duration": 32978100,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "Validate key \"userId\" with value as 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userId\"",
+                  "offset": 13
+                },
+                {
+                  "val": "1",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.validate_key_with_value_as(java.lang.String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Validate key \"id\" with value as 101",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 13
+                },
+                {
+                  "val": "101",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.validate_key_with_value_as(java.lang.String,int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreatePost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-11T15:14:11.633Z",
+        "line": 24,
+        "name": "Validate Email Address Format on Comments posted by UserId",
+        "description": "",
+        "id": "get-all-existing-user-from-server;validate-email-address-format-on-comments-posted-by-userid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4997000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "comments resource with userId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.comments_resource_with_user_id(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 711590100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user calls \"GetCommentsAPI\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetCommentsAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3002200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 518697600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Validate the email address format",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.validate_the_email_address_format()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Print the status in console",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.print_the_status_in_console()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ValidateEmail"
+          }
+        ]
+      }
+    ],
+    "name": "Get all Existing User from Server",
+    "description": "",
+    "id": "get-all-existing-user-from-server",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/fetchPostsByUserID.feature",
+    "tags": []
+  }
+]
