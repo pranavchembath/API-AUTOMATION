@@ -7,7 +7,7 @@ orbs:
 workflows:
     example-workflow:
       jobs:
-        - mvn/install:
-            # command: mvn install 
+        - maven/test:
+            command: '-X verify' 
             context: SurePayAssignment
             publishSonarResults: false 
