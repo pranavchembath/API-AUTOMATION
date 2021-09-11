@@ -8,4 +8,4 @@ workflows:
     example-workflow:
       jobs:
         - maven/install:
-            command: 'mvn install' 
+            command: 'maven install' 
