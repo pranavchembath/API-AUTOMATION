@@ -7,5 +7,5 @@ orbs:
 workflows:
     example-workflow:
       jobs:
-        - maven/install:
-            command: 'maven install' 
+        - maven/test:
+            command: 'mvn test' 
