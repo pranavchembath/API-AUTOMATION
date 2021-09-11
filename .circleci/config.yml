@@ -7,6 +7,7 @@ orbs:
 workflows:
     example-workflow:
       jobs:
-        - mvn/build:
-            command: mvn install 
+        - mvn/install:
+            # command: mvn install 
+            context: SurePayAssignment
             publishSonarResults: false 
